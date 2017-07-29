@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScrollCell" rowHeight="80" id="zei-KP-TsJ" customClass="TableViewCell" customModule="ReusableUIView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zei-KP-TsJ" id="SDT-Ab-pTD">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFU-I5-qtb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="EFU-I5-qtb" secondAttribute="trailing" id="3Yu-0E-UFE"/>
+                    <constraint firstAttribute="bottom" secondItem="EFU-I5-qtb" secondAttribute="bottom" id="Q6c-xO-OWn"/>
+                    <constraint firstItem="EFU-I5-qtb" firstAttribute="top" secondItem="SDT-Ab-pTD" secondAttribute="top" id="cYT-E1-u8d"/>
+                    <constraint firstItem="EFU-I5-qtb" firstAttribute="leading" secondItem="SDT-Ab-pTD" secondAttribute="leading" id="fLe-dd-LEV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="scrollView" destination="EFU-I5-qtb" id="BQC-87-s1X"/>
+            </connections>
+            <point key="canvasLocation" x="102.5" y="-105"/>
+        </tableViewCell>
+    </objects>
+</document>
